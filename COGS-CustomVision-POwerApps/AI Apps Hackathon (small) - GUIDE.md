@@ -5,6 +5,7 @@ _guide to hack:_
 Create an intelligent application for image classification using AI service. Components:
 - Object Clasification model - CustomVision.ai
 - PowerApps application to call the object classification serivce and display results
+![alt text](./assets/powerapps.png "Logo PowerApps")
 
 ## Prerequisitites 
 - Microsoft Azure account
