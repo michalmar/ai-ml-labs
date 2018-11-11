@@ -6,8 +6,8 @@ Create an intelligent application for image classification using AI service. Com
 - Object Clasification model - CustomVision.ai
 - PowerApps application to call the object classification serivce and display results
 
-![alt text](./assets/powerapps.png "Logo PowerApps" =250x)
-![alt text](./assets/customvision.png "Logo CustomVision" =250x)
+![alt text](./assets/powerapps.png "Logo PowerApps" )
+![alt text](./assets/customvision.png "Logo CustomVision")
 
 ## Prerequisitites 
 - Microsoft Azure account
