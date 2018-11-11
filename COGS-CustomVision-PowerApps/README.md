@@ -31,9 +31,8 @@ Create an intelligent application for image classification using AI service. Com
 ![alt text](./assets/app_layout.jpg "app")
 3. add CustomVision as datasource [prediction key]
 ![alt text](./assets/app_datasource.jpg "app")
-4. add media button action to score image (onselect, onchange): `UpdateContext({res:CustomVision.PredictImage("xxxxxxxx-xxxx-xxx-xxxx-xxxxxx", UploadedImage1).Predictions});
-UpdateContext({vis:true})`
-5. update label property to update text based on results (text): `Concatenate("Probability: ",Text(First(res).Probability)) //If(First(res).Tag="superb" && First(res).Probability>0.8,"Yes", "NO")`
+4. add media button action to score image (onselect, onchange): `UpdateContext({res:CustomVision.PredictImage("xxxxxxxx-xxxx-xxx-xxxx-xxxxxx", UploadedImage1).Predictions})`
+5. update label property to update text based on results (text): `Concatenate("Probability: ",Text(First(res).Probability))`
 6. save & publish the app
 
 
