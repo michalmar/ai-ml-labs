@@ -1,4 +1,4 @@
-# AI Apps Hackathon
+# AI Apps - COGS-CustomVision-PowerApps Hackathon
 _guide to hack:_
 
 ## Overview
