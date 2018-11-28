@@ -20,8 +20,8 @@ az vm extension set \
 ```
 
 Setup JupyterHub AAD Login - according to https://github.com/jupyterhub/oauthenticator#azure-setup
-	1. Install oauthenticator
-	2. Export env variable AAD tenant id
-	3. Create AAD App - return URL must match 
-	4. Change jupyterhub_config.py - use oathenticator (domain here is the address of VM
+1. Install oauthenticator
+2. Export env variable AAD tenant id
+3. Create AAD App - return URL must match 
+4. Change jupyterhub_config.py - use oathenticator (domain here is the address of VM
 	
