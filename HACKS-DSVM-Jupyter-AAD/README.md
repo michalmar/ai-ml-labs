@@ -94,9 +94,27 @@ The name on the User AD Record is the one, which is used as profile to JupyterHu
 ![alt text](./assets/user_name_AD.png "sync name in AAD")
 
 3. I needed to create Linux user to match the AAD user name (without @abc.com)
+
+`sudo adduser jon.doe`
+
+> note: if your AAD username contains non-alphanumerical characters (such as ".") you need to allow that by changing `adduser.conf`: 
+>
+> `sudo nano /etc/adduser.conf`
+>
+> change:
+>
+> `NAME_REGEX='^[a-z][-.a-z0-9]*$'`
+
 ![alt text](./assets/linux_user.png "create linux account")
 
 4. I needed to CHOWN notebooks directory to linux User
+
+`sudo chmod 777 /data/home/jon.doe/`
+
+
+5. test running JupyterHub with config file explicitly
+
+`jupyterhub -f /etc/jupyterhub/jupyterhub_config.py`
 
 Result:
 
