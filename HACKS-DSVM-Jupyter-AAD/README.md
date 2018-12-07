@@ -1,6 +1,8 @@
 # Create DSVM (Linux) with AAD and Authenticate with AAD to JupyterHub
 
-Simple guide on how to enable Azure Active Directory (AAD) integration with LInux DSVM and using JupyterHub.
+Simple guide on how to enable Azure Active Directory (AAD) integration with Linux DSVM and using JupyterHub.
+
+Authors: Michal Marusan and Alexandre Gattiker, Cloud Solution Architects, Microsoft.
 
 ## Motivation
 
@@ -16,7 +18,7 @@ An [OAuth plugin for JupyterHub](https://github.com/jupyterhub/oauthenticator#az
 
 Fortunately, [Linux VMs can be integrated with Azure Active Directory](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/login-using-aad) as well. Thus the JupyterHub OAuth plugin and the AAD extension for Linux can be combined to enable multi-user data science environments without manually managing users and passwords.
 
-An alternative to DSVMs is to use [https://docs.microsoft.com/en-us/azure/azure-databricks/](Azure Databricks), which provide a notebook environment for Python, R and Scala fully integrated with Azure Active Directory with fine-grained Role-Based Access Control.
+An alternative to DSVMs is to use [Azure Databricks](https://docs.microsoft.com/en-us/azure/azure-databricks), which provide a notebook environment for Python, R and Scala fully integrated with Azure Active Directory with fine-grained Role-Based Access Control.
 
 ## How-to Guide
 
@@ -28,7 +30,7 @@ In your Azure subscription, [create a Data Science Virtual Machine for Linux](ht
 
 ### Step 2 - Add AAD MV extension
 
-Apply the [extension to allow AAD login to VM] (https://docs.microsoft.com/en-us/azure/virtual-machines/linux/login-using-aad#install-the-azure-ad-login-vm-extension).
+Apply the [extension to allow AAD login to VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/login-using-aad#install-the-azure-ad-login-vm-extension).
 
 ```
 az vm extension set \
@@ -40,7 +42,7 @@ az vm extension set \
 
 ### Step 3 - Create AAD application
 
-[Create an Azure AD application following these instructions] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal.
+[Create an Azure AD application following these instructions](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal).
 
 As Sign-on URL, enter 'https://<YOUR_VM_IP>:8000/hub/oauth_callback'.
 
