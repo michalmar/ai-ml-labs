@@ -28,7 +28,7 @@ In your Azure subscription, [create a Data Science Virtual Machine for Linux](ht
 
 ![Create DSVM](./assets/create_dsvm.png "Create DSVM")
 
-### Step 2 - Add AAD MV extension
+### Step 2 - Add AAD VM extension
 
 Apply the [extension to allow AAD login to VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/login-using-aad#install-the-azure-ad-login-vm-extension).
 
