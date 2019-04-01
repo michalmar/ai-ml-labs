@@ -9,4 +9,15 @@ In order to succesfully go through the lab content few things need to be done:
 - create Databricks cluster
 
 ## Lab Guide
+This lab consists of three sub-tasks:
+1. [00 Quick Start Using Python.ipynb](./00_Quick_Start_Using_Python.ipynb)
+    - introduction into handling files with Spark API
+1. [01 Pop vs. Price SQL.html](./01_Pop_vs_Price_SQL.html)
+    - introduction to handling data using Spark SQL API
+1. [02 Pop. vs. Price LR.ipynb](02_Pop_vs_Price_LR.ipynb)
+    - basics of Spark Machine Learning API for Logistic Regression
+
+
+
+
 
